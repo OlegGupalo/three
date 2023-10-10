@@ -18,7 +18,35 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
                 }}
                 className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
             >
-                {name}
+            <div onClick={() => window.open(source_code_link, "_blank")} className="cursor-pointer relative w-full h-[230px]">
+                <img 
+                    src={image}
+                    alt={name}
+                    className="object-cover w-full h-full rounded-2xl"
+                />
+                <div className="absolute inset-0 flex justify-end">
+                    <div 
+                        className="w-10 h-10 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  rounded-full flex justify-center items-center cursor-pointer"
+                    >
+                        <img 
+                            src={github}
+                            className="w-3/4 h-3/4 object-contain"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div className="mt-5">
+                <h3 className="text-white font-bold text-[24px]">{name}</h3>
+                <p className="mt-2 text-secondary text-[14px]">{description}</p>
+
+                <div className="mt-4 flex flex-wrap gap-5">
+                    {tags.map(({name, color}) => (
+                        <p className={`${color}`}>
+                            #{name}
+                        </p>
+                    ))}
+                </div>
+            </div>
             </Tilt>
         </motion.div>
     )

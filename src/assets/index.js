@@ -30,10 +30,14 @@ import blog from "./company/blog.png";
 import expo from "./company/expo.png";
 
 import carrent from "./carrent.png";
+import projectOne from "./project1.png"
+import projectTwo from './new.png'
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 export {
+  projectTwo,
+  projectOne,
   expo,
   blog,
   logo,

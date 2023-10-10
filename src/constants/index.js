@@ -21,9 +21,11 @@ import {
     carrent,
     jobit,
     tripguide,
+    projectTwo,
     threejs,
     blog,
-    expo
+    expo,
+    projectOne
   } from "../assets";
   
   export const navLinks = [
@@ -199,16 +201,16 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Online store",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web-based platform that allows users to search, add, and and add products from the list of information to the carts.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "firebase",
           color: "green-text-gradient",
         },
         {
@@ -216,13 +218,13 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: projectOne,
+      source_code_link: "https://github.com/OlegGupalo/Shop",
     },
     {
       name: "Job IT",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "A comprehensive platform that allows users to create own posts, allow its, and add other people as friend.",
       tags: [
         {
           name: "react",
@@ -237,20 +239,20 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: projectOne,
+      source_code_link: "https://github.com/OlegGupalo/Lama-Blog",
     },
     {
-      name: "Trip Guide",
+      name: "Blog website",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A comprehensive platform that allows users to create own posts, allow its, and add other people as friend.",
       tags: [
         {
-          name: "nextjs",
+          name: "React",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "NestJS",
           color: "green-text-gradient",
         },
         {
@@ -258,8 +260,8 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: projectTwo,
+      source_code_link: "https://github.com/OlegGupalo/Lama-Blog",
     },
   ];
   
